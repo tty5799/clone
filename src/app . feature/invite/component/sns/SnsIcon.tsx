@@ -12,7 +12,7 @@ const SnsIcon = () => {
           return (
             <div key={idx}>
               <StyledIcon item={item}>
-                <img src="/ic-kakao.png" alt="kakaoImg" />
+                <img src="/images/ic-kakao.png" alt="kakaoImg" />
               </StyledIcon>
               <div className="iconName">{item}</div>
             </div>
@@ -60,7 +60,7 @@ const StyledIcon = styled.div<{ item: string }>`
   align-items: center;
   background-color: ${(props) =>
     props.item === "카카오톡"
-      ? "yellow"
+      ? "#FFFF00"
       : props.item === "밴드"
       ? "#5FCD4A"
       : props.item === "페이스북"

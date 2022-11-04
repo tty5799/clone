@@ -5,7 +5,7 @@ const FriendList = () => {
   return (
     <StyledListBox>
       <div className="faceImg">
-        <img src="/ic-kakao.png" alt="kakaoImage" />
+        <img src="/images/ic-kakao.png" alt="kakaoImage" />
       </div>
       <div className="notFind">추천할 친구가 없어요.</div>
       <div className="notFind">

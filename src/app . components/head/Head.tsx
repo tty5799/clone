@@ -91,14 +91,14 @@ const StyledBox = styled.div`
 
   .scrollBox {
     height: 1px;
-    background-color: gray;
+    background-color: #dcdcdc;
   }
 `;
 
 const ScrollBlock = styled.div<{ tap: number }>`
   height: 3px;
   width: 120px;
-  background-color: #111111;
+  background-color: #5d5151;
   position: absolute;
   top: 47px;
   z-index: 10;
