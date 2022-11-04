@@ -4,6 +4,7 @@ import {useState} from "react";
 import ScreenInvite from "../../app . feature/invite/screen/ScreenInvite";
 import ScreenRequest from "../../app . feature/request/screen/ScreenRequest";
 import ScreenRanking from "../../app . feature/ranking/screen/ScreenRanking";
+import {any, string} from "prop-types";
 
 
 const Head = () => {
@@ -17,10 +18,8 @@ const Head = () => {
 
   return (
     <StyledBox>
-      <div>
-        <HeadBox>
-
-          <HeadPageBox>
+        <div className="tapBox">
+          <div className="tapPage">
             <div className={`${tap === 0 ? "active" : "inactive"}`}
                  onClick={() => {
                    setTap(0)
@@ -28,9 +27,9 @@ const Head = () => {
             >
               랭킹
             </div>
-          </HeadPageBox>
+          </div>
 
-          <HeadPageBox>
+          <div className="tapPage">
             <div className={`${tap === 1 ? "active" : "inactive"}`}
                  onClick={() => {
                    setTap(1)
@@ -38,9 +37,9 @@ const Head = () => {
             >
               친구초대
             </div>
-          </HeadPageBox>
+          </div>
 
-          <HeadPageBox>
+          <div className="tapPage">
             <div className={`${tap === 2 ? "active" : "inactive"}`}
                  onClick={() => {
                    setTap(2)
@@ -48,32 +47,25 @@ const Head = () => {
             >
               받은요청
             </div>
-          </HeadPageBox>
-
-        </HeadBox>
-
-        <ScrollBlock tap={tap}/>
-        <ScrollBox>
-        </ScrollBox>
-
-      </div>
-
-        <div>
-          {tapMenu[tap]}
+          </div>
         </div>
 
+        <ScrollBlock tap={tap}/>
+        <div className="scrollBox"/>
+
+        {tapMenu[tap]}
     </StyledBox>
   );
 };
 
 const StyledBox = styled.div`
 position: relative;
-`
-
-const HeadBox = styled.div`
-  display: flex;
-  margin: auto;
   
+  .tapBox{
+    display: flex;
+    margin: auto;
+  }
+
   .tapPage{
     height: 50px;
     width: 120px;
@@ -83,17 +75,6 @@ const HeadBox = styled.div`
     justify-content: center;
     font-weight: 400;
   }
-`
-
-const HeadPageBox = styled.div`
-  height: 50px;
-  width: 120px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-
 
   .inactive {
     font-size: 17px;
@@ -106,11 +87,11 @@ const HeadPageBox = styled.div`
     color: black;
     cursor: pointer;
   }
-`
-
-const ScrollBox = styled.div`
-  height: 1px;
-  background-color: gray;
+  
+  .scrollBox{
+    height: 1px;
+    background-color: gray;
+  }
 `
 
 const ScrollBlock = styled.div<{ tap: number }>`
