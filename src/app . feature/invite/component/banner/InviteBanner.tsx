@@ -1,18 +1,16 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const InviteBanner = () => {
-    return (
-        <StyledBox>
-            <img src="/img-addfriend-text.png"/>
-        </StyledBox>
-    );
+  return (
+    <StyledBox>
+      <img src="/img-addfriend-text.png" />
+    </StyledBox>
+  );
 };
 
-
-
 const StyledBox = styled.div`
-margin-bottom: 15px;
-`
+  margin-bottom: 15px;
+`;
 
 export default InviteBanner;

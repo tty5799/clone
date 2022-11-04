@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import NoPost from "../component/post/NoPost";
 
 const ScreenRequest = () => {
   return (
     <div>
-      <NoPost/>
+      <NoPost />
     </div>
   );
 };
