@@ -12,7 +12,7 @@ const SnsIcon = () => {
           return (
             <div key={idx}>
               <StyledIcon item={item}>
-                <img src="/ic-kakao.png" />
+                <img src="/ic-kakao.png" alt="kakaoImg" />
               </StyledIcon>
               <div className="iconName">{item}</div>
             </div>

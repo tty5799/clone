@@ -13,7 +13,7 @@ const BannerCard = () => {
         </div>
       </div>
       <StyledImg>
-        <img src="/img-addfriend-sns.png" />
+        <img src="/img-addfriend-sns.png" alt="BannerImage" />
       </StyledImg>
     </StyledBox>
   );
@@ -67,7 +67,7 @@ const StyledBox = styled.div`
 const StyledImg = styled.div`
   margin-top: 5px;
   display: flex;
-  height: 83px;
+  height: 86px;
 `;
 
 export default BannerCard;

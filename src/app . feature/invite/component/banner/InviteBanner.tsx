@@ -4,7 +4,7 @@ import styled from "styled-components";
 const InviteBanner = () => {
   return (
     <StyledBox>
-      <img src="/img-addfriend-text.png" />
+      <img src="/img-addfriend-text.png" alt="TextImage" />
     </StyledBox>
   );
 };

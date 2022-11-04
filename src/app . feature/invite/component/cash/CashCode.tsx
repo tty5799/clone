@@ -10,7 +10,7 @@ const CashCode = () => {
         <div className="codeCopy">코드 복사하기</div>
       </div>
       <div className="imgBox">
-        <img src="/img-addfriend-illust.png" />
+        <img src="/img-addfriend-illust.png" alt="FriendImage" />
       </div>
     </StyledBox>
   );

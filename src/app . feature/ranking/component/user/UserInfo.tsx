@@ -7,7 +7,7 @@ const UserInfo = () => {
       <div className="rank">1</div>
 
       <div>
-        <img src="/ic-kakao.png" />
+        <img src="/ic-kakao.png" alt="kakaoImage" />
       </div>
 
       <div className="infoBox">
